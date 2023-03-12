@@ -98,9 +98,4 @@ body {
 .img {
     text-align: center;
     display: flex;
-    transform: scale(0);
-}
-
-.img:hover {
-    transform: scale(1);
 }
