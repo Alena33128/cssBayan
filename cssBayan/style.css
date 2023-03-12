@@ -75,7 +75,7 @@ body {
     overflow: hidden;
 }
 
-.accordion-container label:hover {
+.accordion-container label:hover .articl-2 {
     color: rgb(69, 28, 3);
     
 }
@@ -98,4 +98,9 @@ body {
 .img {
     text-align: center;
     display: flex;
+    transform: scale(0);
+}
+
+.img:hover {
+    transform: scale(1);
 }
