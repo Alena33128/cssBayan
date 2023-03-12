@@ -1,0 +1,92 @@
+body {
+    font-size: 2em;
+}
+
+.accordion-container {
+    margin: 3%;
+    background-color: rgb(180, 158, 135);
+}
+
+.accordion-container:hover {
+    color: rgb(69, 28, 3);
+    
+}
+
+.artikl-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(69, 28, 3);
+}
+
+.accordion-container .bayan-mem {
+    width: 100%;
+    background-color: rgb(232, 178, 76);
+    margin: 0 auto;
+    height: 0;
+    text-align: center;
+    color: rgba(133, 100, 58, 0);
+    padding: 0 5em;
+    box-sizing: border-box;
+    transition: color 0.5s, padding 0.5s;
+    overflow: hidden;
+}
+
+.articl-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.articl-2 .aicon-noaktiv {
+    display: none;
+}
+
+.articl-2 .aicon-activ:hover {
+    display: none;
+    color: rgb(69, 28, 3);
+}
+    
+
+.accordion-container label {
+    cursor: pointer;
+    display: block;
+    padding: 30px 40px;
+    width: 100%;
+    color: rgb(189, 91, 34);
+    box-sizing: border-box;
+    z-index: 100;
+    transition: color .35s;
+    overflow: hidden;
+}
+
+.accordion-container label:hover {
+    color: rgb(69, 28, 3);
+    
+}
+
+.accordion-container input {
+    display: none;
+}
+
+.accordion-container input:checked + label {
+    background-color: rgb(180, 158, 135);
+    color:  rgb(246, 125, 3);
+}
+
+.accordion-container input:checked + label::before {
+    transition: transform .35s;
+    transform: rotate(90deg);
+}
+
+
+.accordion-container input:checked + label + .bayan-mem {
+    height: auto;
+    padding: 40px 60px 20px;
+}
+
+.img {
+    text-align: center;
+    display: flex;
+}
