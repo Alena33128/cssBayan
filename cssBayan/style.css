@@ -1,9 +1,28 @@
 body {
     font-size: 2em;
+    max-width: 120em;
+    max-height: 67.5em;
+}
+
+@media screen and (max-width: 820px) {
+    body {
+        font-size: 1.25em;
+        max-width: 51.25em;
+        max-height: 73.75em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 1em;
+        max-width: 20em;
+        max-height: 35.5em;
+    }
 }
 
 .accordion-container {
     margin: 3%;
+    position: relative;
     background-color: rgb(180, 158, 135);
 }
 
@@ -33,6 +52,7 @@ body {
 }
 
 .articl-2 {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,18 +61,12 @@ body {
 
 .articl-2 .aicon-noaktiv {
     display: none;
-}
-
-.articl-2 .aicon-activ:hover {
-    display: none;
-    color: rgb(69, 28, 3);
-}
-    
+} 
 
 .accordion-container label {
     cursor: pointer;
     display: block;
-    padding: 30px 40px;
+    padding: 0.5em 0.75em;
     width: 100%;
     color: rgb(189, 91, 34);
     box-sizing: border-box;
@@ -75,15 +89,10 @@ body {
     color:  rgb(246, 125, 3);
 }
 
-.accordion-container input:checked + label::before {
-    transition: transform .35s;
-    transform: rotate(90deg);
-}
-
 
 .accordion-container input:checked + label + .bayan-mem {
     height: auto;
-    padding: 40px 60px 20px;
+    padding: 1em 1.5em 1em;
 }
 
 .img {
